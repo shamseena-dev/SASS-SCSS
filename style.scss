@@ -1,0 +1,35 @@
+@import "./_topDiv";
+@import "./header";
+
+$primary-color: red;
+body{
+    
+    color: green;
+   
+}
+
+
+div h1{
+    color: blue;
+    background-color: $primary-color;
+}
+#mixinCheck{
+    @include flexWithParameters(column, blue);
+}
+div{
+    display:flex;
+    @extend #mixinCheck;
+    
+    p{
+        color: brown;
+    }
+    button{
+        &:hover{
+            cursor:pointer;
+            background-color: black;
+        }
+        &::before {
+            border:2px solid red;
+        }
+    }
+}

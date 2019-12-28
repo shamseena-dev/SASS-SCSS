@@ -1,0 +1,23 @@
+header{
+    background-image: url('./travel.jpg');
+}
+
+@mixin flexDef{
+    display:flex;
+    justify-content: center;
+    color: violet;
+    background-color: blue;
+}
+footer {
+    @include flexDef();
+}
+
+@mixin flexWithParameters($dir , $color){
+    display: flex;
+    flex-direction: $dir;
+    border: 2px solid $color; 
+}
+
+section {
+    @include flexWithParameters(row, pink);
+}

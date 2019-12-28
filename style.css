@@ -1,0 +1,77 @@
+.top {
+  border: 2px solid black;
+}
+
+body {
+  margin: 30px;
+}
+
+div span {
+  color: white;
+}
+
+header {
+  background-image: url("./travel.jpg");
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: violet;
+  background-color: blue;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid pink;
+}
+
+body {
+  color: green;
+}
+
+div h1 {
+  color: blue;
+  background-color: red;
+}
+
+#mixinCheck, div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid blue;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div p {
+  color: brown;
+}
+
+div button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+div button::before {
+  border: 2px solid red;
+}
+/*# sourceMappingURL=style.css.map */
